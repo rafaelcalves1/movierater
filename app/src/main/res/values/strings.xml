@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MovieRater</string>
+
+
+    <string name="route_home">Home</string>
+    <string name="route_search">Search</string>
+
+    <string name="toolbar_title">Movie Rater</string>
+</resources>
