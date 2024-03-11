@@ -12,6 +12,7 @@ Este projeto foi criado com o objetivo de aplicar os resultados de estudos. O pr
     
  * Outras Tecnologias:
    * Retrofit2
+   * Navigation
    * Paging 3
    * Coroutines
    * Coil
