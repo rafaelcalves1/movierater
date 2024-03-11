@@ -12,7 +12,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
-import coil.compose.AsyncImage
+import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
 import com.projects.movierater.R
 import com.projects.movierater.ui.extensions.shimmerEffect
@@ -23,7 +23,7 @@ fun MovieItem(
     modifier: Modifier = Modifier,
     imgUrl: String,
 ) {
-    AsyncImage(
+    SubcomposeAsyncImage(
         modifier = modifier
             .fillMaxSize()
             .clip(shape = RoundedCornerShape(dimensionResource(id = R.dimen.radius_m))),
@@ -31,6 +31,9 @@ fun MovieItem(
             .data(CommonUrl.IMAGE_PATH + imgUrl)
             .crossfade(true)
             .build(),
+        loading = {
+            MovieItemShimmer()
+        },
         contentScale = ContentScale.Crop,
         contentDescription = null
     )

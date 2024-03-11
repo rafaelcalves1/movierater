@@ -6,4 +6,7 @@
     <string name="route_search">Search</string>
 
     <string name="toolbar_title">Movie Rater</string>
+
+    <string name="common_error_title">Ocorreu um erro ao tentar pegar as informações</string>
+    <string name="common_error_try_again">Tentar novamente</string>
 </resources>
